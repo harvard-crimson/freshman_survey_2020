@@ -84,7 +84,7 @@
     createChart('column', {
         2018: 'data/2018/0/0/secondary-school-legacy-bar.csv',
         2019: 'data/2019/0/0/secondary-school-legacy-bar.csv',
-        2020: 'data/2020/0/0/seconary-school-legacy-bar.csv'
+        2020: 'data/2020/0/0/secondary-school-legacy-bar.csv'
     }, '#legacy-secondary-school', null, /* option overrides */ { yAxis: { max: 30 } } );
     createChart('pie', {
         2019: 'data/2019/0/0/transgender.csv',

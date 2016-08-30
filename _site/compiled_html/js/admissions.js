@@ -16,7 +16,9 @@ $(document).ready(function() {
     createFullChart('column', ['Public', 'Private'], null, {
         2017: ['data/2017/1/0/sat_public.csv', 'data/2017/1/0/sat_private.csv'],
         2018: ['data/2018/1/0/sat_public.csv', 'data/2018/1/0/sat_private.csv'],
-        2019: ['data/2019/1/0/sat_public.csv', 'data/2019/1/0/sat_private.csv']
+        2019: ['data/2019/1/0/sat_public.csv', 'data/2019/1/0/sat_private.csv'],
+        2020: ['data/2020/1/0/sat_public.csv',
+        'data/2020/1/0/sat_private.csv']
     }, '', '#sat-school-type');
 
     // No data for class of 2019
@@ -28,7 +30,8 @@ $(document).ready(function() {
     createNumericChart('bar', {
         2017: 'data/2017/1/0/sat_ethnicity.csv',
         2018: 'data/2018/1/0/sat_ethnicity.csv',
-        2019: 'data/2019/1/0/sat_ethnicity.csv'
+        2019: 'data/2019/1/0/sat_ethnicity.csv',
+        2020: 'data/2020/1/0/sat_ethnicity.csv'
     }, '#sat-ethnicity');
     csv_to_scatter({
         2017: 'data/2017/1/0/gpa_sat.csv',
@@ -40,27 +43,32 @@ $(document).ready(function() {
     createChart('pie', {
         2017: 'data/2017/1/1/financial_aid_raw.csv',
         2018: 'data/2018/1/1/financial_aid_raw.csv',
-        2019: 'data/2019/1/1/financial_aid_raw.csv'
+        2019: 'data/2019/1/1/financial_aid_raw.csv',
+        2020: 'data/2020/1/1/financial_aid_raw.csv'
     }, '#financial-aid');
     createChart('column', {
         2017: 'data/2017/1/1/parents_income.csv',
         2018: 'data/2018/1/1/parents_income.csv',
-        2019: 'data/2019/1/1/parents_income.csv'
+        2019: 'data/2019/1/1/parents_income.csv',
+        2020: 'data/2020/1/1/parents_income.csv'
     }, '#parents-income', null, /* override */ { yAxis: { max: 25} });
     createChart('bar', {
         2017: 'data/2017/1/1/urbanity_aid.csv',
         2018: 'data/2018/1/1/urbanity_aid.csv',
-        2019: 'data/2019/1/1/urbanity_aid.csv'
+        2019: 'data/2019/1/1/urbanity_aid.csv',
+        2020: 'data/2020/1/1/urbanity_aid.csv'
     }, '#urbanity-aid', null, /* override options */ { yAxis: { max: 90 } });
     createChart('pie', {
         2017: 'data/2017/1/1/counselor_raw.csv',
         2018: 'data/2018/1/1/counselor_raw.csv',
-        2019: 'data/2019/1/1/counselor_raw.csv'
+        2019: 'data/2019/1/1/counselor_raw.csv',
+        2020: 'data/2020/1/1/counselor_raw.csv'
     }, '#counselor-raw');
     createChart('column', {
         2017: 'data/2017/1/1/income_counselor.csv',
         2018: 'data/2018/1/1/income_counselor.csv',
-        2019: 'data/2019/1/1/income_counselor.csv'
+        2019: 'data/2019/1/1/income_counselor.csv',
+        2020: 'data/2020/1/1/income_counselor.csv'
     }, '#income-counselor', null, /* override */ { yAxis: { max: 35} });
 
     // College Acceptances

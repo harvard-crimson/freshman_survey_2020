@@ -14,3 +14,4 @@ Run `jekyll serve` to serve content from 'compiled_html' directory on your brows
 
 - `athletics_raw.csv` 2020 offers two options, 2019 offers three?
 - replace caption text in `makeup.html.jinja2`
+- `gpa_sat.csv` needs data.
