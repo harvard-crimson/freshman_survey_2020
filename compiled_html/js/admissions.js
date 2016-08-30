@@ -80,7 +80,8 @@ $(document).ready(function() {
     createChart('pie', {
         2017: 'data/2017/1/2/early.csv',
         2018: 'data/2018/1/2/early.csv',
-        2019: 'data/2019/1/2/early.csv'
+        2019: 'data/2019/1/2/early.csv',
+        2020: 'data/2020/1/2/early.csv'
     }, '#early');
     // No data
     // createChart('pie', {
@@ -94,34 +95,40 @@ $(document).ready(function() {
     createChart('pie', {
         2017: 'data/2017/1/2/top_choice.csv',
         2018: 'data/2018/1/2/top_choice.csv',
-        2019: 'data/2019/1/2/top_choice.csv'
+        2019: 'data/2019/1/2/top_choice.csv',
+        2020: 'data/2020/1/2/top_choice.csv'
     }, '#top-choice');
     createChart('pie', {
         2017: 'data/2017/1/2/top_choice_early.csv',
         2018: 'data/2018/1/2/top_choice_early.csv',
-        2019: 'data/2019/1/2/top_choice_early.csv'
+        2019: 'data/2019/1/2/top_choice_early.csv',
+        2020: 'data/2020/1/2/top_choice_early.csv'
     }, '#top-choice-early');
     createMultiChart('column', ['Below $40k', '$40k-$80k', '$80k-$125k', '$125k-$250k', '$250k-$500k', 'Above $500k'], null, {
         2017: ['data/2017/1/2/early_income_0.csv', 'data/2017/1/2/early_income_40.csv', 'data/2017/1/2/early_income_80.csv', 'data/2017/1/2/early_income_125.csv', 'data/2017/1/2/early_income_250.csv', 'data/2017/1/2/early_income_500.csv'],
         2018: ['data/2018/1/2/early_income_0.csv', 'data/2018/1/2/early_income_40.csv', 'data/2018/1/2/early_income_80.csv', 'data/2018/1/2/early_income_125.csv', 'data/2018/1/2/early_income_250.csv', 'data/2018/1/2/early_income_500.csv'],
-        2019: ['data/2019/1/2/early_income_0.csv', 'data/2019/1/2/early_income_40.csv', 'data/2019/1/2/early_income_80.csv', 'data/2019/1/2/early_income_125.csv', 'data/2019/1/2/early_income_250.csv', 'data/2019/1/2/early_income_500.csv']
+        2019: ['data/2019/1/2/early_income_0.csv', 'data/2019/1/2/early_income_40.csv', 'data/2019/1/2/early_income_80.csv', 'data/2019/1/2/early_income_125.csv', 'data/2019/1/2/early_income_250.csv', 'data/2019/1/2/early_income_500.csv'],
+        2020: ['data/2020/1/2/early_income_0.csv', 'data/2020/1/2/early_income_40.csv', 'data/2020/1/2/early_income_80.csv', 'data/2020/1/2/early_income_125.csv', 'data/2020/1/2/early_income_250.csv', 'data/2020/1/2/early_income_500.csv']
     }, '#early-income');
     createChart('pie', {
         2017: 'data/2017/1/2/early_school_type.csv',
         2018: 'data/2018/1/2/early_school_type.csv',
-        2019: 'data/2019/1/2/early_school_type.csv'
+        2019: 'data/2019/1/2/early_school_type.csv',
+        2020: 'data/2020/1/2/early_school_type.csv'
     }, '#early-school-type');
 
     // Athletes
     createChart('pie', {
         2017: 'data/2017/0/0/athletes_raw.csv',
         2018: 'data/2018/0/0/athletes_raw.csv',
-        2019: 'data/2019/0/0/athletes_raw.csv'
+        2019: 'data/2019/0/0/athletes_raw.csv',
+        2020: 'data/2020/0/0/athletes_raw.csv'
     }, '#athletes-raw-2');
     createNumericChart('bar', {
         2017: 'data/2017/1/3/recruited_sat.csv',
         2018: 'data/2018/1/3/recruited_sat.csv',
-        2019: 'data/2019/1/3/recruited_sat.csv'
+        2019: 'data/2019/1/3/recruited_sat.csv',
+        2020: 'data/2020/1/3/recruited_sat.csv'
     }, '#sat-athletes');
     // createChart('column', {
     //     2017: 'data/2017/1/3/recruited_income.csv',
