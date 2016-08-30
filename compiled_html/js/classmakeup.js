@@ -113,20 +113,24 @@
     createChart('pie', {
         2017: 'data/2017/0/1/urbanity.csv',
         2018: 'data/2018/0/1/urbanity.csv',
-        2019: 'data/2019/0/1/urbanity.csv'
+        2019: 'data/2019/0/1/urbanity.csv',
+        2020: 'data/2020/0/1/urbanity.csv'
     }, '#urbanity');
 
     // Employment
     createChart('pie', {
         2017: 'data/2017/0/2/starting_salary.csv',
         2018: 'data/2018/0/2/starting_salary.csv',
-        2019: 'data/2019/0/2/starting_salary.csv'
+        2019: 'data/2019/0/2/starting_salary.csv',
+        2020: 'data/2020/0/2/starting_salary.csv'
     }, '#starting-salary');
     createMultiChart('column', ['Male', 'Female'], null,
     {
         2017: ['data/2017/0/2/starting-salary-male.csv', 'data/2017/0/2/starting-salary-female.csv'],
         2018: ['data/2018/0/2/starting-salary-male.csv', 'data/2018/0/2/starting-salary-female.csv'],
-        2019: ['data/2019/0/2/starting-salary-male.csv', 'data/2019/0/2/starting-salary-female.csv']
+        2019: ['data/2019/0/2/starting-salary-male.csv', 'data/2019/0/2/starting-salary-female.csv'],
+        2020: ['data/2020/0/2/starting-salary-male.csv',
+              'data/2020/0/2/starting-salary-female.csv']
     }, "#starting-salary-vs-gender", null, /* override */ { yAxis: { max: 35} });
     //createMultiChart('bar', ['2017', '2027'], ['#1abc9c', '#ba0600'],
     //{
@@ -138,13 +142,17 @@
     {
         2017: ['data/2017/0/2/sector-start-male.csv', 'data/2017/0/2/sector-start-female.csv'],
         2018: ['data/2018/0/2/sector-start-male.csv', 'data/2018/0/2/sector-start-female.csv'],
-        2019: ['data/2019/0/2/sector-start-male.csv', 'data/2019/0/2/sector-start-female.csv']
+        2019: ['data/2019/0/2/sector-start-male.csv', 'data/2019/0/2/sector-start-female.csv'],
+        2020: ['data/2020/0/2/sector-start-male.csv',
+        'data/2020/0/2/sector-start-female.csv']
     }, "#sector-start-by-gender", null, /* override */ { yAxis: { max: 30} });
     createMultiChart('bar', ['Private', 'Public'], null,
     {
         2017: ['data/2017/0/2/sector-start-private.csv', 'data/2017/0/2/sector-start-public.csv'],
         2018: ['data/2018/0/2/sector-start-private.csv', 'data/2018/0/2/sector-start-public.csv'],
-        2019: ['data/2019/0/2/sector-start-private.csv', 'data/2019/0/2/sector-start-public.csv']
+        2019: ['data/2019/0/2/sector-start-private.csv', 'data/2019/0/2/sector-start-public.csv'],
+        2020: ['data/2020/0/2/sector-start-private.csv',
+        'data/2020/0/2/sector-start-public.csv']
     }, "#sector-start-by-school-type", null, /* override */ { yAxis: { max: 30} });
 
 
