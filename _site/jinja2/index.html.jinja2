@@ -9,8 +9,8 @@
 {% block extra_content %}
 <div class="landingcontainer">
 	<div class="intro landing">
-	    <p>Scroll through the interactive graphs and charts on the following pages for a visual representation of the Class of 2019. The data was collected in an email survey conducted by The Crimson during the month of August. More than 70 percent of the class responded. The Crimson did not adjust the data for any possible self-selection bias.</p>
-	    <p>The results of last year&rsquo;s survey of the Class of 2018 can be found <a href="http://features.thecrimson.com/2014/freshman-survey/">here</a>.</p>
+	    <p>Scroll through the interactive graphs and charts on the following pages for a visual representation of the Class of 2020. The data was collected in an email survey conducted by The Crimson during the month of August. More than 70 percent of the class responded. The Crimson did not adjust the data for any possible self-selection bias.</p>
+	    <p>The results of last year&rsquo;s survey of the Class of 2019 can be found <a href="http://features.thecrimson.com/2015/freshman-survey/">here</a>.</p>
 	</div>
 
 	<div class="landing">
@@ -20,6 +20,13 @@
 				<div class="card" id="makeup1" data-destination="makeup/"><div class="cover"></div><div class="text"><span>Data</span></div></div>
 				<div class="card" id="makeup2" data-destination="makeup-narrative/"><div class="cover"></div><div class="text"><span>Narrative</span></div></div>
 			</div>
+
+	</div>
+	<div style="clear: both"></div>
+</div>
+{% endblock %}
+
+{% block comment %}
 			<div class="survey-section">
 				<div class="subhead">Academics</div>
 				<div class="card" id="ac1" data-destination="academics/"><div class="cover"></div><div class="text"><span>Data</span></div></div>
@@ -33,7 +40,4 @@
 				<div class="card" id="sex2" data-destination="lifestyle-narrative/"><div class="cover"></div><div class="text"><span>Narrative</span></div></div>
 			</div>
 		</div>
-	</div>
-	<div style="clear: both"></div>
-</div>
-{% endblock %}
+		{% endblock %}
