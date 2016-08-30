@@ -16,7 +16,9 @@ $(document).ready(function() {
     createFullChart('column', ['Public', 'Private'], null, {
         2017: ['data/2017/1/0/sat_public.csv', 'data/2017/1/0/sat_private.csv'],
         2018: ['data/2018/1/0/sat_public.csv', 'data/2018/1/0/sat_private.csv'],
-        2019: ['data/2019/1/0/sat_public.csv', 'data/2019/1/0/sat_private.csv']
+        2019: ['data/2019/1/0/sat_public.csv', 'data/2019/1/0/sat_private.csv'],
+        2020: ['data/2020/1/0/sat_public.csv',
+        'data/2020/1/0/sat_private.csv']
     }, '', '#sat-school-type');
 
     // No data for class of 2019
