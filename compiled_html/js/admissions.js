@@ -30,7 +30,8 @@ $(document).ready(function() {
     createNumericChart('bar', {
         2017: 'data/2017/1/0/sat_ethnicity.csv',
         2018: 'data/2018/1/0/sat_ethnicity.csv',
-        2019: 'data/2019/1/0/sat_ethnicity.csv'
+        2019: 'data/2019/1/0/sat_ethnicity.csv',
+        2020: 'data/2020/1/0/sat_ethnicity.csv'
     }, '#sat-ethnicity');
     csv_to_scatter({
         2017: 'data/2017/1/0/gpa_sat.csv',
