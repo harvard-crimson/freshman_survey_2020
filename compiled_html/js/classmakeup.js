@@ -28,17 +28,20 @@
     createChart('pie', {
         2017: 'data/2017/0/0/gender.csv',
         2018: 'data/2018/0/0/gender.csv',
-        2019: 'data/2019/0/0/gender.csv'
+        2019: 'data/2019/0/0/gender.csv',
+        2020: 'data/2020/0/0/gender.csv'
     }, '#gender');
     createChart('column', {
         2017: 'data/2017/0/0/race.csv',
         2018: 'data/2018/0/0/race.csv',
-        2019: 'data/2019/0/0/race.csv'
+        2019: 'data/2019/0/0/race.csv',
+        2020: 'data/2020/0/0/race.csv'
     }, '#race');
     createChart('pie', {
         2017: 'data/2017/0/0/sexual_orientation.csv',
         2018: 'data/2018/0/0/sexual_orientation.csv',
-        2019: 'data/2019/0/0/sexual_orientation.csv'
+        2019: 'data/2019/0/0/sexual_orientation.csv',
+        2020: 'data/2020/0/0/sexual_orientation.csv'
     }, '#sexual-orientation');
     createChart('pie', {
         2017: 'data/2017/0/0/birth_order.csv',
