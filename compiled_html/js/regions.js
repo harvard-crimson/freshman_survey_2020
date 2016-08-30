@@ -35,7 +35,7 @@ window.onload = function () {
     us.northeast = path_l;
     us.southeast = path_v;
     us.outside = path_outside;
-    year = "2019";
+    year = "2020";
 
     resize_regions(us);
     for (elt in us) {
