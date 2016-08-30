@@ -1,0 +1,298 @@
+{% extends 'jinja2/_base.html.jinja2' %}
+
+{% block js %}
+    <script src="js/regions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/charts.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/academics.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+{% endblock %}
+
+{% block data_link %}academics/{% endblock %}
+{% block narrative_link %}academics-narrative/{% endblock %}
+{% block yale_link %}academics-yale/{% endblock %}
+
+{% block nav_items %}
+    <li>Cheating</li>
+    <li>In High School</li>
+    <li>At Harvard</li>
+    <li>Athletics</li>
+{% endblock %}
+
+{% block cover_image %}
+    <img class="full-width" src="img/cover_2019_2.jpg">
+{% endblock %}
+
+{% block content %}
+    <div class="intro scroll-row">
+        <div id="subhead">Academics and Extracurriculars</div>
+        <p id="byline">
+            <i>By</i>
+            <a href="http://www.thecrimson.com/writer/1209849/David__Freed/">David Freed</a>
+            and
+            <a href="www.thecrimson.com/writer/1209871/Idrees_M._Kahloon/">Idrees Kahloon</a>
+        </p>
+        <p>Part II of The Crimson's survey of the Class of 2019 takes an in-depth look at the academic and extracurricular experiences and plans of the incoming freshmen. About one in eight survey respondents were recruited to play a varsity sport while in Cambridge, while about one in 12 took a gap year between high school and college to pursue paid or volunteer work, travel, or other activities. More than 40 percent of respondents indicated some level of interest in joining a final club, fraternity, or sorority when they arrive on campus. They have plans for the classroom, too; like their upperclassman peers, many surveyed freshmen reported plans to study government or economics in college, and a small group said the College's new concentration in Theater, Dance, and Media influenced their decision to matriculate.
+        <p>Read Part II of The Crimson's three-part series on the freshman survey <a href="academics-narrative/">here</a>.</p>
+    </div>
+
+    <div class="scroll-row">
+        <h1>Cheating</h1>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#exam-cheaters-tab" data-toggle="tab">Exams</a>
+            </li>
+            <li>
+                <a href="#paper-cheaters-tab" data-toggle="tab">Papers</a>
+            </li>
+            <li>
+                <a href="#homework-cheaters-tab" data-toggle="tab">Cheating on Homework or Problem Sets</a>
+            </li>
+            <li>
+                <a href="#cheating-school-type-tab" data-toggle="tab">Cheating by School Type</a>
+            </li>
+            <li>
+                <a href="#cheating-recruits-tab" data-toggle="tab">Cheating by Recruit Status</a>
+            </li>
+            <li>
+                <a href="#cheating-recruits-breakdown-tab" data-toggle="tab">Recruit Cheating Breakdown</a>
+            </li>
+            <li>
+                <a href="#cheating-gender-tab" data-toggle="tab">Cheating by Gender</a>
+            </li>
+        </ul>
+        <ul class="tab-panes">
+            <li id="exam-cheaters-tab" class="active">
+                <h2>Cheating on an Exam</h2>
+                <div id="exam-cheaters" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="paper-cheaters-tab">
+                <h2>Cheating on a Paper or Take-Home Assignment</h2>
+                <div id="paper-cheaters" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="homework-cheaters-tab">
+                <h2>Homework or Problem Sets</h2>
+                <div id="homework-cheaters" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="cheating-school-type-tab">
+                <h2>Cheating by Type of High School</h2>
+                <div id="cheating-school-type" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="cheating-recruits-tab">
+                <h2>Cheating by Recruit Status</h2>
+                <div id="cheating-recruits" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="cheating-recruits-breakdown-tab">
+                <h2>Recruit Cheating Breakdown</h2>
+                <div id="cheating-recruits-breakdown" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="cheating-gender-tab">
+                <h2>Cheating by Gender</h2>
+                <div id="cheating-gender" class="graph"></div>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+
+    <div class="scroll-row">
+        <h1>In High School</h1>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#study-habits-past-tab" data-toggle="tab">Study Hours</a>
+            </li>
+            <li>
+                <a href="#study-habits-school-type-tab" data-toggle="tab">Study Hours by School Type</a>
+            </li>
+            <li>
+                <a href="#math-level-tab" data-toggle="tab">Math Level</a>
+            </li>
+            <li>
+                <a href="#pressure-tab" data-toggle="tab">Sources of Pressure</a>
+            </li>
+            <li>
+                <a href="#extracurriculars-tab" data-toggle="tab">Extracurriculars</a>
+            </li>
+            <li>
+                <a href="#athletics-by-income-tab" data-toggle="tab">High School Athletics by Income</a>
+            </li>
+            <li>
+                <a href="#leadership-tab" data-toggle="tab">Leadership</a>
+            </li>
+            <li>
+                <a href="#government-tab" data-toggle="tab">Student Government</a>
+            </li>
+        </ul>
+        <ul class="tab-panes">
+            <li id="study-habits-past-tab" class="active">
+                <h2>Study Hours</h2>
+                <div id="study-habits-past" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="study-habits-school-type-tab">
+                <h2>Study Hours by School Type</h2>
+                <div id="study-habits-school-type" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="math-level-tab">
+                <h2>Math Level</h2>
+                <div id="math-level" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="pressure-tab">
+                <h2>Sources of Pressure</h2>
+                <div id="pressure" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="extracurriculars-tab">
+                <h2>High School Extracurriculars</h2>
+                <div id="extracurriculars" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="athletics-by-income-tab">
+                <h2>Participation in High School Athletics by Income</h2>
+                <div id="athletics-by-income" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="leadership-tab">
+                <h2>High School Extracurricular Leadership</h2>
+                <div id="leadership" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="government-tab">
+                <h2>Belief in Power of Student Government</h2>
+                <div id="government" class="graph"></div>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="TheCrimson_AllArticles_ATF_300x250" class="box ad">
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('TheCrimson_AllArticles_ATF_300x250'); });
+        </script>
+    </div>
+
+    <div class="scroll-row">
+        <h1>At Harvard</h1>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#study-habits-future-tab" data-toggle="tab">Study Hours</a>
+            </li>
+            <li>
+                <a href="#priorities-raw-tab" data-toggle="tab">Priorities</a>
+            </li>
+            <li>
+                <a href="#concentration-raw-tab" data-toggle="tab">Concentrations</a>
+            </li>
+            {# <li>
+                <a href="#concentration-gender-tab" data-toggle="tab">Concentrations by Gender</a>
+            </li> #}
+            <li>
+                <a href="#secondary-tab" data-toggle="tab">Secondary/Citation</a>
+            </li>
+            <li>
+                <a href="#greek-tab" data-toggle="tab">Greek Life</a>
+            </li>
+            <li>
+                <a href="#greek-school-tab" data-toggle="tab">Greek Life by School Type</a>
+            </li>
+        </ul>
+        <ul class="tab-panes">
+            <li id="study-habits-future-tab" class="active">
+                <h2>Anticipated College Study Hours</h2>
+                <div id="study-habits-future" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="priorities-raw-tab">
+                <h2>Anticipated College Priorities</h2>
+                <div id="priorities-raw" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="secondary-tab">
+                <h2>Anticipated Secondaries and Language Citations</h2>
+                <div id="secondary" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="concentration-raw-tab">
+                <h2>Anticipated Concentrations</h2>
+                <div id="concentration-raw" class="graph"></div>
+                <p></p>
+            </li>
+            {# <li id="concentration-gender-tab">
+                <h2>Anticipated Concentrations by Gender</h2>
+                <div id="concentration-gender" class="graph"></div>
+                <p></p>
+            </li> #}
+            <li id="greek-tab">
+                <h2>Frats, Sororities, and Final Clubs</h2>
+                <div id="greek" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="greek-school-tab">
+                <h2>Frats, Sororities, and Final Clubs by School Type</h2>
+                <div id="greek-school" class="graph"></div>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+
+    <div id="TheCrimson_AllArticles_BTF_300x250" class="box ad">
+        <script type='text/javascript'>
+            googletag.cmd.push(function() { googletag.display('TheCrimson_AllArticles_BTF_300x250'); });
+        </script>
+    </div>
+
+    <div class="scroll-row">
+        <h1>Athletics</h1>
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#athletes-raw-tab" data-toggle="tab">Numbers</a>
+            </li>
+            <li>
+                <a href="#attrition-athletics-tab" data-toggle="tab">Attrition</a>
+            </li>
+            <li>
+                <a href="#concussions-tab" data-toggle="tab">Concussions Numbers</a>
+            </li>
+            {# <li>
+                <a href="#concussions-view-tab" data-toggle="tab">Attitudes Regarding Concussions</a>
+            </li> #}
+            <li>
+                <a href="#athletes-economics-conc-tab" data-toggle="tab">Preferences for Economics by Athletics</a>
+            </li>
+        </ul>
+        <ul class="tab-panes">
+            <li id="athletes-raw-tab" class="active">
+                <h2>Athletes at Harvard</h2>
+                <div id="athletes-raw"></div>
+                <p></p>
+            </li>
+            <li id="attrition-athletics-tab">
+                <h2>Likelihood of Playing All Four Years</h2>
+                <div id="attrition-athletics" class="graph"></div>
+                <p></p>
+            </li>
+            <li id="concussions-tab">
+                <h2>Athletics and Concussions</h2>
+                <div id="concussions" class="graph"></div>
+                <p></p>
+            </li>
+            {# <li id="concussions-view-tab">
+                <h2>Effect of Concussions on Attitude Towards Sport</h2>
+                <div id="concussions-view" class="graph"></div>
+                <p></p>
+            </li> #}
+            <li id="athletes-economics-conc-tab">
+                <h2>Preferences for Economics by Athletics</h2>
+                <div id="athletes-economics-conc" class="graph"></div>
+                <p></p>
+            </li>
+        </ul>
+    </div>
+
+{% endblock %}
