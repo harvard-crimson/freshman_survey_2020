@@ -63,39 +63,50 @@
     }, '#athletes-raw');
     createChart('column', {
         //2018: 'data/2018/0/0/athletes-family-income.csv',
-        2019: 'data/2019/0/0/athletes-family-income.csv'
+        2019: 'data/2019/0/0/athletes-family-income.csv',
+        2020: 'data/2020/0/0/athletes-family-income.csv'
     }, '#athletes-vs-income');
     createChart('column', {
         2018: 'data/2018/0/0/community-legacy-bar.csv',
-        2019: 'data/2019/0/0/community-legacy-bar.csv'
+        2019: 'data/2019/0/0/community-legacy-bar.csv',
+        2020: 'data/2020/0/0/community-legacy-bar.csv'
     }, '#legacy-community');
     createChart('column', {
         2018: 'data/2018/0/0/family-income-legacy-bar.csv',
-        2019: 'data/2019/0/0/family-income-legacy-bar.csv'
+        2019: 'data/2019/0/0/family-income-legacy-bar.csv',
+        2020: 'data/2020/0/0/family-income-legacy-bar.csv'
     }, '#legacy-income', null, /* option overrides */ { yAxis: { max: 50 } } );
     createChart('column', {
         2018: 'data/2018/0/0/legacy-bar.csv',
-        2019: 'data/2019/0/0/legacy-bar.csv'
+        2019: 'data/2019/0/0/legacy-bar.csv',
+        2020: 'data/2020/0/0/legacy-bar.csv'
     }, '#legacy');
     createChart('column', {
         2018: 'data/2018/0/0/secondary-school-legacy-bar.csv',
-        2019: 'data/2019/0/0/secondary-school-legacy-bar.csv'
+        2019: 'data/2019/0/0/secondary-school-legacy-bar.csv',
+        2020: 'data/2020/0/0/seconary-school-legacy-bar.csv'
     }, '#legacy-secondary-school', null, /* option overrides */ { yAxis: { max: 30 } } );
     createChart('pie', {
-        2019: 'data/2019/0/0/transgender.csv'
+        2019: 'data/2019/0/0/transgender.csv',
+        2020: 'data/2020/0/0/transgender.csv'
     }, '#transgender');
     createChart('pie', {
-        2019: 'data/2019/0/0/firstgen.csv'
+        2019: 'data/2019/0/0/firstgen.csv',
+        2020: 'data/2020/0/0/firstgen.csv'
     }, '#first-gen');
     createMultiChart('column', ['First Generation', 'Not First Generation'], null,
     {
-        2019: ['data/2019/0/0/ethnicity-first-gen.csv', 'data/2019/0/0/ethnicity-not-first-gen.csv']
+        2019: ['data/2019/0/0/ethnicity-first-gen.csv', 'data/2019/0/0/ethnicity-not-first-gen.csv'],
+        2020: ['data/2020/0/0/ethnicity-not-first-gen.csv',
+              'data/2020/0/0/ethnicity-not-first-gen.csv']
     }, "#first-gen-ethnicity");
     createChart('pie', {
-        2019: 'data/2019/0/0/fgen_financialaid.csv'
+        2019: 'data/2019/0/0/fgen_financialaid.csv',
+        2020: 'data/2020/0/0/fgen_financialaid.csv'
     }, '#first-gen-financialaid');
     createChart('pie', {
-        2019: 'data/2019/0/0/fgen_income.csv'
+        2019: 'data/2019/0/0/fgen_income.csv',
+        2020: 'data/2020/0/0/fgen_income.csv'
     }, '#first-gen-income');
 
     // Geography
