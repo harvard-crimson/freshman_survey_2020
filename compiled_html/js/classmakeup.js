@@ -63,15 +63,18 @@
     }, '#athletes-raw');
     createChart('column', {
         //2018: 'data/2018/0/0/athletes-family-income.csv',
-        2019: 'data/2019/0/0/athletes-family-income.csv'
+        2019: 'data/2019/0/0/athletes-family-income.csv',
+        2020: 'data/2020/0/0/athletes-family-income.csv'
     }, '#athletes-vs-income');
     createChart('column', {
         2018: 'data/2018/0/0/community-legacy-bar.csv',
-        2019: 'data/2019/0/0/community-legacy-bar.csv'
+        2019: 'data/2019/0/0/community-legacy-bar.csv',
+        2020: 'data/2020/0/0/community-legacy-bar.csv'
     }, '#legacy-community');
     createChart('column', {
         2018: 'data/2018/0/0/family-income-legacy-bar.csv',
-        2019: 'data/2019/0/0/family-income-legacy-bar.csv'
+        2019: 'data/2019/0/0/family-income-legacy-bar.csv',
+        2020: 'data/2020/0/0/family-income-legacy-bar.csv'
     }, '#legacy-income', null, /* option overrides */ { yAxis: { max: 50 } } );
     createChart('column', {
         2018: 'data/2018/0/0/legacy-bar.csv',
