@@ -13,4 +13,3 @@ Run `jekyll serve` to serve content from 'compiled_html' directory on your brows
 ## Demographics and Makeup
 
 - replace caption text in `makeup.html.jinja2`
-- fix data points?
