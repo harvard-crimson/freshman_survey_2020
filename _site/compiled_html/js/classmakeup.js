@@ -97,7 +97,7 @@
     createMultiChart('column', ['First Generation', 'Not First Generation'], null,
     {
         2019: ['data/2019/0/0/ethnicity-first-gen.csv', 'data/2019/0/0/ethnicity-not-first-gen.csv'],
-        2020: ['data/2020/0/0/ethnicity-not-first-gen.csv',
+        2020: ['data/2020/0/0/ethnicity-first-gen.csv',
               'data/2020/0/0/ethnicity-not-first-gen.csv']
     }, "#first-gen-ethnicity");
     createChart('pie', {
