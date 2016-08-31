@@ -13,6 +13,4 @@ Run `jekyll serve` to serve content from 'compiled_html' directory on your brows
 ## Demographics and Makeup
 
 - replace caption text in `makeup.html.jinja2`
-- `gpa_sat.csv` needs data.
-- `applied_accepted.csv` needs data.
-- `recruited_sat.csv` needs data.
+- fix data points?

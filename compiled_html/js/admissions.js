@@ -36,7 +36,8 @@ $(document).ready(function() {
     csv_to_scatter({
         2017: 'data/2017/1/0/gpa_sat.csv',
         2018: 'data/2018/1/0/gpa_sat.csv',
-        2019: 'data/2019/1/0/gpa_sat.csv'
+        2019: 'data/2019/1/0/gpa_sat.csv',
+        2020: 'data/2020/1/0/gpa_sat.csv'
     }, 'sat-gpa', 'GPA', 'SAT Score', colorset[colorindex++ % colorset.length], [2.8,4.0], [1200,2400]);
 
     // Financial Aid
@@ -75,7 +76,8 @@ $(document).ready(function() {
     csv_to_scatter({
         2017: 'data/2017/1/2/applied_accepted.csv',
         2018: 'data/2018/1/2/applied_accepted.csv',
-        2019: 'data/2019/1/2/applied_accepted.csv'
+        2019: 'data/2019/1/2/applied_accepted.csv',
+        2020: 'data/2020/1/2/applied_accepted.csv'
     }, 'application-numbers', 'Applied to', 'Accepted to', colorset[colorindex++ % colorset.length]);
     createChart('pie', {
         2017: 'data/2017/1/2/early.csv',
