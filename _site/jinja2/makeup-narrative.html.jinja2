@@ -1,6 +1,9 @@
 {% extends 'jinja2/_base.html.jinja2' %}
 
 {% block js %}`
+    <script src="js/regions.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/charts.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/makeup-narrative.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
 {% endblock %}
 
@@ -10,91 +13,456 @@
 
 {% block nav_items_narrative %}
     <li>Who They Are</li>
-    <li>Financial Aid</li>
-    <li>Legacy Status</li>
-    <li>SAT Scores</li>
-    <li>Admissions</li>
+    <li>Legacies and First Gens</li>
+    <li>Getting In </li>
+    <li>Paying</li>
 {% endblock %}
 
 {% block content %}
-    <div id="subhead">Makeup of the Class</div>
-    <div id="narrative" class="intro scroll-row">
-        <p id="byline">
-            <i>By</i>
-            <a href="http://www.thecrimson.com/writer/1210615/Mariel%20A.%20Klein__%20/">Mariel A. Klein</a>
-            and
-            <a href="http://www.thecrimson.com/writer/1212330/Elizabeth_C._Keto/">Elizabeth C. Keto</a>
-        </p>
-        <p>Sixteen percent of surveyed students in Harvard College’s Class of 2019 reported that they are first-generation college students, meaning their parents and other previous generations did not attend college, according to The Harvard Crimson’s annual survey of the incoming freshman class.</p>
-        <p>The same proportion of students surveyed—16 percent—reported that one or more of their parents attended the College, meaning they are considered legacies by the Harvard Admissions Office, which says such students “may receive an additional look” when they apply.</p>
-        <p>Harvard, whose student body still largely hails from elite upbringings socioeconomically, has pushed to attract and welcome more students from diverse backgrounds in recent years through its famously generous financial aid program and varied <a href="http://www.thecrimson.com/article/2013/10/24/financial-aid-office-connection/">recruitment tactics</a>. But first-generation students at Harvard have said that they <a href="http://features.thecrimson.com/2014/year-in-review/article/after-acceptance/">still face challenges</a> on campus when they arrive.</p>
-        <p>Surveyed first-generation students reported coming from more diverse racial, socioeconomic, and geographic backgrounds than Harvard freshmen who are not first-generation.</p>
-        <p>Students who identified as first-generation, for example, reported that they come from households with significantly lower incomes than their non-first-generation peers. Forty-five percent of first-generation respondents reported a household income of less than $40,000, compared to 9 percent of respondents who are not the first in their families to attend college. Just 3 percent of first-generation respondents reported household incomes of $500,000 or over, compared to 18 percent of their non-first-generation peers.</p>
-        <p>A higher percentage of first-generation respondents identified as racial and ethnic minorities: 28 percent are Hispanic or Latino, and 17 percent are black or African-American, while 36 percent are white. Sixty-two percent of non-first-generation respondents, in contrast, are white.</p>
-        <p>Geographically, a quarter of surveyed first-generation students hail from the West—compared to 17 percent of respondents who are not first-generation—and 39 percent grew up in an urban environment, compared to 26 percent of other respondents. About 15 percent of first-generation respondents are from rural communities and 47 percent from suburban. Sixty-six percent of respondents who are not the first in their families to attend college, meanwhile, are from the suburbs.</p>
-        <p>Of surveyed students who identified as first-generation, 94 percent reported that they receive financial aid from the College, compared to 48 percent of respondents who are not first-generation.</p>
-        <p>The Crimson’s annual survey asked incoming freshmen dozens of questions on topics including their financial and educational backgrounds, views on politics and religion, interest in campus social life, expectations about academic and extracurricular life at Harvard, and experience with drugs and alcohol. The Crimson did not adjust the survey results for any possible selection bias.</p>
-        <p>Conducted by The Crimson, the survey was emailed to all incoming freshmen on Aug. 6 and closed on Aug. 27, garnering responses from 1,184 students, roughly 71 percent of the 1,665-person class.</p>
-        <p class="scroll-row"><strong>Who They Are</strong></p>
-        <p>Survey respondents reported different backgrounds and demographics, although most are white and hail from relatively near Harvard.</p>
-        <ul>
-            <li>Fifty-eight percent of respondents identify as white, compared to 62 percent of respondents to The Crimson’s 2014 survey of the Class of 2018. About 30 percent of respondents identify as Asian or South Asian; just more than 12 percent as Hispanic or Latino; 11 percent as black or African American; 1 percent as American Indian or Alaskan Native; and 1 percent as Pacific Islander.</li>
-            <li>Women made up a slight majority of freshman respondents; 51 percent of survey respondents are female and 48 percent are male. This offsets an opposite gender dynamic in the Class of 2018, in which 53 percent of members surveyed last year were male.</li>
-            <li>Six respondents, or about half a percent, in the Class of 2019 identify as transgender.</li>
-            <li>A plurality of Harvard’s Class of 2019 hails from the Northeast, at 38 percent, a decrease from the 43 percent of last year’s respondents. Nineteen percent of this year’s freshman respondents are from the West, and 11 percent are international students.</li>
-            <li>Most surveyed students—63 percent—live in the suburbs. Just 9 percent of respondents are from rural areas.</li>
-            <li>Before coming to Harvard, 63 percent of respondents attended public school, most of them non-charter, while 35 percent attended private school—26 percent non-denominational and 10 percent parochial.</li>
-            <li>Of surveyed freshmen who reported a household income less than $40,000, 80 percent went to public school and 20 percent went to private school. Of surveyed freshmen whose household income totals $500,000 or more, 32 percent went to public school and 66 percent went to private school.</li>
-            <li>Eighty-six percent of surveyed freshmen in the Class of 2019 identify as heterosexual. Five percent identify as homosexual and 5 percent as bisexual, and 3 percent said they are questioning.</li>
-            <li>Male survey respondents were more likely to identify as homosexual, while female respondents were more likely to identify as bisexual. About 81 percent of respondents who identify as homosexual are male, and 73 percent of surveyed freshmen who identify as bisexual are female.</li>
-            <li>A year after Harvard unveiled a new sexual assault policy, thirty-four percent of female respondents said they considered the culture and policies surrounding sexual assault when deciding whether to attend Harvard, while only 11 percent of male students said the same.</li><li>Eight percent of freshman respondents took a gap year between high school and college. Of those, 61 percent said their admission to Harvard was deferred by a year, suggesting that they are members of the Admissions Office’s “z-list.” Of gap year respondents who said their admission was deferred by a year, 39 percent of respondents reported that one or both of their parents attended Harvard College.</li>
-        </ul>
-        <p class="scroll-row"><strong>Financial Aid</strong></p>
-        <p>Harvard again offered substantial financial aid to the incoming freshman class, and a disproportionate percentage of recipients among surveyed students identify as racial and ethnic minorities and attended public school.</p>
-        <ul>
-            <li>About 56 percent of freshman respondents reported receiving financial aid from Harvard.</li>
-            <li>Roughly 77 percent of students who identify as black or African American; 69 percent who identify as Hispanic or Latino; and 81 percent who identify as American Indian or Alaskan Native said they received financial support from the College.</li>
-            <li>About 66 percent of respondents who attended public non-charter high school reported that they receive financial aid, while 33 percent from private non-denominational school and 49 percent from parochial private school said the same.</li>
-            <li>About 45 percent of respondents who reported that they were recruited to play a varsity sport at Harvard said they receive financial aid.</li>
-        </ul>
-        <p class="scroll-row"><strong>Legacy Status</strong></p>
-        <p>Sixteen percent of surveyed freshmen reported that one or more of their parents attended Harvard College, meaning they are considered legacies in the admissions process. More than a quarter of respondents—28 percent—said that they have a relative in their immediate or extended family who attended the College.</p>
-        <ul>
-            <li>About 55 percent of surveyed legacies hail from the Northeast.</li>
-            <li>Thirty-three percent of students who attended non-denominational private school reported that one or more of their parents attended the College.</li>
-            <li>Roughly half of surveyed legacies reported attending a non-denominational private school.</li>
-            <li>A quarter of white freshmen surveyed are legacies.</li>
-            <li>Nine percent of respondents reported that they have one or more sibling had attended the College.</li>
-            <li>Of respondents who reported a household income of less than $40,000, only one person said one or both of their parents attended the College. Of respondents who reported a household income of $500,000 or more, 43 percent said one or both of their parents did.</li>
-            <li>Forty-one percent of respondents who are legacies according to the College said their parents’ combined annual income is $500,000 or more.</li>
-        </ul>
-        <p class="scroll-row"><strong>SAT Scores</strong></p>
-        <p>The average best overall SAT score of respondents was 2229. Following a year of national scrutiny surrounding Harvard’s use of <a href="http://www.thecrimson.com/article/2014/11/18/law-suit-admissions-alleged-discrimination/">race-based affirmative action and allegations</a> that its admissions processes discriminate against Asian applicants, the reported SAT scores of freshman respondents varied on average by race.</p>
-        <ul>
-            <li>Respondents who identify as Asian, but not including South Asian, reported higher overall SAT scores on average, with an overall best score of 2300 out of a possible 2400.</li>
-            <li>The average best overall SAT score reported by white respondents was 2218; 2174 for respondents who are Hispanic or Latino; and 2149 for respondents who are black or African American.</li>
-            <li>Respondents who came from households with an income of less than $40,000 a year on average had lower overall best SAT scores—about 2189 on average—than those who came from more affluent backgrounds. Respondents whose parents make $500,000 or more each year reported a best overall SAT score of 2239 on average.</li>
-            <li>Surveyed students from private non-denominational schools reported slightly higher overall SAT scores—2250 on average—than students from public non-charter schools, who on average said they received 2225 on the test.</li>
-            <li>Female respondents reported slightly higher overall SAT scores on average than male respondents— 2235 and about 2225, respectively.</li>
-            <li>Surveyed freshmen who were admitted to the College through its single-choice early action admissions program reported higher SAT scores on average, with an overall score 0f 2239, compared to 2217 for regular admittees.</li>
-            <li>Surveyed members of the Class of 2019 who identified as legacies reported higher best overall SAT scores—2269 on average—than their non-legacy peers, who reported SAT scores of 2221 on average.</li>
-        </ul>
-        <p class="scroll-row"><strong>Admissions</strong></p>
-        <p>Fifty-five percent of surveyed freshman reported that they were admitted to Harvard through the College’s single-choice early action program. Many respondents who were admitted early come from families with higher incomes and were more likely to be legacies than their peers who applied regular decision.</p>
-        <p>Respondents who were admitted early, moreover, were more likely to be white, more likely to have attended a private school, and more likely to be from the Northeast. They were less likely than the average survey respondent to be Hispanic or African American, to receive financial aid from the College, or to be the first person in their family to attend college.</p>
-        <ul>
-            <li>Ten percent of respondents who were admitted early report a household income of less than $40,000, compared to 14 percent of all surveyed freshmen.</li>
-            <li>Nineteen percent of early admit respondents have parents with a combined income of $500,000 or more, though students with this level of family income make up only 15 percent of the surveyed Class of 2019 overall.</li>
-            <li>About 22 percent of surveyed early admits had one or more parents who attend Harvard, compared to 16 percent of the surveyed freshman class overall.</li>
-            <li>Sixty-one percent of survey respondents who were admitted early identify as white, 30 percent as Asian or South Asian, 10 percent as Hispanic or Latino, 10 percent as black or African-American, 1 percent as American Indian or Alaskan Native, and 1 percent as Pacific Islander.</li>
-            <li>Sixty percent of respondents admitted early come to Harvard from public high school and 39 percent from private school.</li>
-            <li>Respondents from the Northeastern U.S. make up 44 percent of those who were admitted early and 38 percent of the survey respondents from the surveyed Class of 2019 as a whole.</li>
-            <li>A smaller percentage of surveyed students admitted early reported that they receive financial aid from the College—47 percent—than the percentage of the surveyed freshman class as a whole—about 56 percent.</li>
-            <li>Twelve percent of surveyed freshmen admitted early to Harvard are first-generation college students, compared to 16 percent of respondents overall.</li>
-            <li>Nineteen percent of respondents admitted early reported using a private admissions counselor throughout the application process, while 18 percent of all surveyed freshmen said they did.</li>
-        </ul>
-        <p>&mdash;Staff writer Mariel A. Klein can be reached at mariel.klein@thecrimson.com. Follow her on Twitter <a href="https://twitter.com/mariel_klein">@mariel_klein</a>.</p>
-        <p>&mdash;Staff writer Elizabeth C. Keto can be reached at eketo@college.harvard.edu.</p>
-    </div>
+<style>
+ul.year-switch{
+    display: none !important;
+}
+</style>
+<div id="subhead">Makeup of the Class</div>
+<div id="narrative" class="intro scroll-row">
+   <p id="byline">
+      <i>By</i>
+      <a href="https://www.thecrimson.com/writer/1211608/Ignacio__Sabate/">Ignacio Sabate</a>
+   </p>
+   <p>Each year, The Crimson conducts a survey of the incoming freshman class, who are asked dozens of questions ranging from their academic interests to their social lives and political views. Of the 1,657 students emailed, 1,209 responded, representing roughly 73 percent of the class. The Crimson did not adjust the survey results for any possible selection bias. </p>
+   <p>This first installation of The Crimson’s three-part series on the Class of 2020 examines makeup of the College’s newest class, including the ethnicity, gender, and family and high school backgrounds of its members. In addition, the story examines topics related to freshmen’s financial aid and admission to the College. </p>
+   <p>Members of the Class of 2020—largely white and heterosexual—matriculate nearly a year after Harvard was <a href='http://www.thecrimson.com/article/2016/2/25/fighting-time-scrutiny/'>roiled in debate</a> over the inclusion and treatment of minority students across the University. Amid campus discussion last November, the College released a <a href='http://www.thecrimson.com/article/2015/11/20/diversity-report-reform-released/'>37-page report</a> that called for wide-ranging student life reforms, emphasizing the need to “convey the institution’s commitment to cultures of inclusion and appreciation of diversity.” </p>
+   <p>Results of The Crimson’s survey of the Class of 2020 demonstrate a relationship between reported ethnicity and family income bracket. Of surveyed students who identify as white, 20 percent have parents who make more than $500,000 each year. By contrast, about 13 percent of Asian respondents report coming from the same financial background, as do 8 percent of black and African American respondents, and 11 percent of Latino and Hispanic respondents.</p>
+   <p>Slightly more than a quarter—roughly 29 percent—of Latino or Hispanic students surveyed come from families that make less than $40,000 annually. Nearly 20 percent of surveyed black or African American students and nearly 10 percent of surveyed white students come from families within the same income bracket. </p>
+   <p>Surveyed students who come from less affluent backgrounds are more likely to be first-generation college students, which Harvard defines as students who are the first generation in their family to attend college. Nearly half of first-generation students come from families with combined incomes below $40,000 per year.</p>
+   <p>Even more, nearly all, or 94. 5 percent, of polled students whose families earn less than $40,000 per year are not legacy students— students who have family members who attend or have graduated from Harvard College. </p>
+   <p>Nearly 50 percent of students whose families earn more than $500,000 annually said they are legacy students. </p>
+   <p>Of respondents interested in pursuing consulting directly after graduation, 30 percent—a plurality— fell in the $500,000 or over income bracket.</p>
+   <p>The Crimson’s survey of the Class of 2020 was distributed through email and was open for responses on Aug. 8 . It closed on Aug. 25. </p>
+   <p class="scroll-row"><strong>Who They Are</strong></p>
+        
+ <p>
+            <div id="race-tab">
+                <h2>Class of 2020</h2>
+                <div id="race" class="graph"></div>
+            </div>
+</p>
+
+   <p>All told, the demographics of Harvard’s freshman class largely mirrors those of the Class of 2019, now sophomores. The majority of respondents to The Crimson’s survey are white and heterosexual, and a slightly larger percentage of respondents are male (50.2 percent of respondents, compared to 49.2 percent who said they are female). The remainder of respondents identify as transexual. </p>
+   <p> Last year, a slightly larger percentage of respondents in the Class of 2019 were male. </p>
+   <ul>
+      <li>Fifty-six percent of the surveyed freshmen said they are white, while 27 percent identify as Asian, 13 percent as Hispanic or Latino, 11 percent as Black or African American, 6 percent as South Asian, and 0.6 percent as Pacific Islander. </li>
+      <li>About 85 percent of surveyed students identify as heterosexual, 5 percent as homosexual, and roughly 6 percent as bisexual. Of the respondents, about 3 percent said they were questioning their sexual identity.</li>
+      <li>The majority—82 percent—of people who indicated they identified as homosexual were male. </li>
+      <li>Half of people who reported they identify as bisexual are females; males represent 45 percent of those who identify as bisexual.</li>
+   </ul>
+   <br>
+<p>
+<div id="regions-outer" class="active">
+                <div id="regions-inner" class="clearfix">
+                    <ul class="year-switch">
+                        {# Spaceless #}
+                        <div class="year-switch-option" data-year="">2017</div><div
+                             class="year-switch-option" data-year="2018">2018</div><div
+                             class="year-switch-option" data-year="2019">2019</div><div
+                             class="year-switch-option selected" data-year="2020">2020</div>
+                    </ul>
+                    <div id="paper">
+                    </div>
+                    <div id="regions-right">
+                        <h2>Mouse over region to see data.</h2>
+
+                        <div id="northeast" class="region">
+                            <h3>
+                                <div class="region-stat">41.1%</div>
+                                of students are from the Northeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">73.4%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">88.7%</div>
+                                of students from the Northeast expect to return after graduating.
+                            </h3>
+                        </div>
+                        <div id="southeast" class="region">
+                            <h3>
+                                <div class="region-stat">11.7%</div>
+                                of students are from the Southeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">2.5%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">12.2%</div>
+                                of students from the Southeast expect to return after graduating.
+                            </h3>
+                        </div>
+                        <div id="midwest" class="region">
+                            <h3>
+                                <div class="region-stat">13.8%</div>
+                                of students are from the Midwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">2.6%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">18.6%</div>
+                                of students from the Midwest expect to return after graduating.
+                            </h3>
+                        </div>
+                        <div id="southwest" class="region">
+                            <h3>
+                                <div class="region-stat">7.8%</div>
+                                of students are from the Southwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">1.3%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">10.0%</div>
+                                of students from the Southwest expect to return after graduating.
+                            </h3>
+                        </div>
+                        <div id="west" class="region">
+                            <h3>
+                                <div class="region-stat">14.5%</div>
+                                of students are from the West.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">10.7%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">42.2%</div>
+                                of students from the West expect to return after graduating.
+                            </h3>
+                        </div>
+
+                        <div id="northeast2018" class="region">
+                            <h3>
+                                <div class="region-stat">43.1%</div>
+                                of students are from the Northeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">70.7%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">34.7%</div>
+                                of students from the Northeast have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="southeast2018" class="region">
+                            <h3>
+                                <div class="region-stat">10.6%</div>
+                                of students are from the Southeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">2.6%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">20.3%</div>
+                                of students from the Southeast have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="midwest2018" class="region">
+                            <h3>
+                                <div class="region-stat">11.0%</div>
+                                of students are from the Midwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">2.3%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">22.8%</div>
+                                of students from the Midwest have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="southwest2018" class="region">
+                            <h3>
+                                <div class="region-stat">6.8%</div>
+                                of students are from the Southwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">2.4%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">21.8%</div>
+                                of students from the Southwest have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="west2018" class="region">
+                            <h3>
+                                <div class="region-stat">16.9%</div>
+                                of students are from the West.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">14.2%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">24.6%</div>
+                                of students from the West have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="outside2018" class="region">
+                            <h3>
+                                <div class="region-stat">11.6%</div>
+                                of students are from outide the US.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">7.8%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">14.9%</div>
+                                of students from outside the US have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+
+                        <div id="northeast2019" class="region">
+                            <h3>
+                                <div class="region-stat">38.3%</div>
+                                of students are from the Northeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">70.8%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">35.9%</div>
+                                of students from the Northeast have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="southeast2019" class="region">
+                            <h3>
+                                <div class="region-stat">12.5%</div>
+                                of students are from the Southeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">1.4%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">26.6%</div>
+                                of students from the Southeast have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="midwest2019" class="region">
+                            <h3>
+                                <div class="region-stat">12.3%</div>
+                                of students are from the Midwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">2.5%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">23.6%</div>
+                                of students from the Midwest have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="southwest2019" class="region">
+                            <h3>
+                                <div class="region-stat">7.0%</div>
+                                of students are from the Southwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">1.1%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">13.6%</div>
+                                of students from the Southwest have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="west2019" class="region">
+                            <h3>
+                                <div class="region-stat">18.5%</div>
+                                of students are from the West.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">13.7%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">28.6%</div>
+                                of students from the West have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="outside2019" class="region">
+                            <h3>
+                                <div class="region-stat">11.2%</div>
+                                of students are from outide the US.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">10.2%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">14.0%</div>
+                                of students from outside the US have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        
+                        <div id="northeast2020" class="region">
+                            <h3>
+                                <div class="region-stat">39.2%</div>
+                                of students are from the Northeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">90.0%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">46.8%</div>
+                                of students from the Northeast have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="southeast2020" class="region">
+                            <h3>
+                                <div class="region-stat">12.0%</div>
+                                of students are from the Southeast.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">9.2%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">32.1%</div>
+                                of students from the Southeast have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="midwest2020" class="region">
+                            <h3>
+                                <div class="region-stat">11.2%</div>
+                                of students are from the Midwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">20.5%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">30.4%</div>
+                                of students from the Midwest have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="southwest2020" class="region">
+                            <h3>
+                                <div class="region-stat">6.7%</div>
+                                of students are from the Southwest.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">16.5%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">20.3%</div>
+                                of students from the Southwest have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="west2020" class="region">
+                            <h3>
+                                <div class="region-stat">18.1%</div>
+                                of students are from the West.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">46.2%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">38.5%</div>
+                                of students from the West have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        <div id="outside2020" class="region">
+                            <h3>
+                                <div class="region-stat">12.6%</div>
+                                of students are from outide the US.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">39.6%</div>
+                                of students plan to live there after college.
+                            </h3>
+                            <h3>
+                                <div class="region-stat">15.0%</div>
+                                of students from outside the US have a relative that went to Harvard College.
+                            </h3>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+</p>
+<br>
+<br>
+
+
+   <p>A plurality of freshmen respondents—39 percent—hail from the Northeast, while about 7 percent said they come from the Southwest—the lowest percentage represented among students from the United States.</p>
+   <ul>
+      <li>Eighteen percent of respondents said they are from the West; 12 percent indicated they are from the Southeast, and 11 percent said they were from the Midwest. A eighth—roughly 13 percent—of surveyed freshmen said they hailed from outside of the United States.</li>
+      <li>First-generation students are less likely to come from the Northeast than their non-first-generation peers. Roughly 29 percent of  surveyed first generation students are from the Northeast, compared to 41 percent of non first generation students.</li>
+      <li>The majority—61 percent—of surveyed freshmen reported they hail from suburban neighborhoods, while around 31 percent said they live in urban settings, and about 9 percent said they come from rural  communities.</li>
+   </ul>
+   <p class="scroll-row"><strong>Legacies and First Gens</strong></p>
+   <p>A slightly smaller percentage of students from the Class of 2020 reported having one or more parents who attended from Harvard College, meaning they are considered legacies in the admissions process, compared to the Class of 2019. This year, 15 percent of surveyed freshmen indicated that they have one or more parents attend from the College, compared to 16 percent last year.</p>
+   <br>
+   <div id="legacy-tab">
+                <h2>Legacy Status</h2>
+                <div id="legacy" class="graph"></div>
+            </div>
+            <br>
+   <ul>
+   
+      <li> Approximately half of students whose parents’ combined yearly income is more than $500,000 have family members—including parents, grandparents, aunts, uncles, and siblings, and other relatives—who have attended from the College. </li>
+      <li>Of students who reported having relatives who attended Harvard College, 53 percent hail from the  Northeast. </li>
+      <li>Of surveyed students who identify as white, 35.3 percent also said they have some family member who attended the College.</li>
+      <li>Nearly 15 percent of surveyed Hispanics or Latinos said they have relatives who attended the College, as did and 13 percent of American Indian or Alaskan Natives, 27.3 percent of Asians, 16 percent of South Asians and 16.4 percent of black or African American students.</li>
+      <li>There were no surveyed Pacific Islander students who reported having relatives who graduated from the College.</li>
+      <li>Students who reported having family members who attended the College are more likely to come from affluent backgrounds. Only 5.5 percent of students whose parents’ combined income is less than $40,000 per year have legacy status, and 15.3 percent of students whose parents’ combined income was between $40,000 and $80,000 are legacies. </li>
+   </ul>
+   <p class="scroll-row"><strong>Getting In</strong></p>
+   <p>In the spring, Harvard accepted a <a href='http://www.thecrimson.com/article/2016/4/1/admissions-low-2020/'>record-low</a> 5.2 percent of applicants for the College’s Class of 2020—or 2,037 students—continuing a years-long dip in admissions rates and making the process the school’s most competitive in modern history.</p>
+   <p>The majority of polled students—63 percent— attended public school during their secondary school years, and of those students, about 3 percent attended a public charter school. </p>
+   <ul>
+      <li>About 36 percent of surveyed students attended private high schools. About 73 percent of those private schools were non-denominational. </li>
+      <li>Just over half, 54 percent, of surveyed freshmen were ranked in the top two percent of their high school’s graduating class. And a majority—62—percent of first generation students were ranked at that level in their class, compared to 53 percent of non-first generation students.</li>
+      <li>To help with college applications, 16 percent of surveyed freshmen sought counsel from a private admissions officer outside of their secondary schools—and of that population, 34 percent have parents who make more than $500,000.  </li>
+      <li>Just over of freshmen surveyed were accepted early to Harvard, and 34 percent of first generation college students were accepted into Harvard’s early admissions program.</li>
+      <li>A slight majority of students who hail from urban settings, or 52 percent, were accepted early, while 36 percent of students from rural areas were accepted early. </li>
+      <li>Fewer than half of surveyed freshmen—42 percent—reported applying to Yale. Of those who said they applied, 31.1 percent were admitted. </li>
+   </ul>
+   <br>
+   <br>
+   <div id="sat-tab" class="active">
+                <h2>GPA vs. SAT Score</h2>
+                <div class="scatter"><svg id="sat-gpa"></svg></div>
+                <p></p>
+            </div>
+   <br>
+   <br>
+   <p>The average reported combined SAT score for the class was 2234.6, according to The Crimson’s survey. </p>
+   <ul>
+      <li>First-generation students reported having an average SAT score of 2118.1. Students who were not first generation reported averaging a 2257.2. </li>
+      <li>Males and females reported similar average SAT scores: 2233.1 and 2236.6, respectively. </li>
+      <li>Students with families that earn less than $40,000 per year had an average best SAT score of 2157.3. Student with families making between $80,000 and $125,000 per year scored 2236.3 on their SAT. Freshmen with families making between $250,000 and $500,000 had an average score of 2280.4. </li>
+   </ul>
+   <p class="scroll-row"><strong>Paying</strong></p>
+   <p>The College states that the price to attend Harvard for the 2016-2017 academic year is $63,025, including tuition, room, and board. While the price tag is hefty, Harvard in the past decade has significantly invested in financial aid, making attending the College free for all students whose parents make less than $65,000 annually. </p>
+   <ul>
+      <li> A majority of surveyed freshmen—57—reported receiving financial aid from the College. In total, 68 percent of surveyed students from public schools reported receiving some form of financial aid, compared to 37 percent of students from private schools.</li>
+      <li>Nearly all, or 95 percent, of surveyed students who reported being first-generation said they receive financial aid. </li>
+   </ul>
+   <p>&mdash;Staff writer Ignacio Sabate can be reached at ignacio.sabate@thecrimson.com. Follow him on Twitter @ignacio_sabate. </p>
+</div>
 
 {% endblock %}
